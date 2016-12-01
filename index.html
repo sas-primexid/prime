@@ -67,16 +67,17 @@
 
           <img src="https://i.imgsafe.org/3c282f1b34.png" alt="">
 
-        </center></p>
+        </center>
+        
+        </p>
 
-        <center>
-
-          <h6>
+          <div id="particle-canvas"></div>
+    <script type="text/javascript" src="particle-network.min.js"></script> 
+    <script type="text/javascript">
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+    </script> 
 
             <br>
-
-
-            </center>
 
       </section>
 
@@ -97,9 +98,17 @@
 
 
     
-
-
-
+<script>
+var options = {
+    particleColor: '#fff',
+    background: '#1a252f',
+    interactive: true,
+    speed: 'fast',
+    density: 'medium'
+};
+var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
+   </script>
+    
   </body>
 
 </html>
